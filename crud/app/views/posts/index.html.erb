@@ -1,0 +1,7 @@
+<h1> 전체 게시판 </h1>
+<a href="/posts/new">[새 글 쓰러 가기]</a><br><br>
+
+<% @posts.each do |p| %>
+<a href="/posts/show/<%= p.id%>"><%= p.id%>: <%= p.title%></a>
+</br></br>
+<% end %>

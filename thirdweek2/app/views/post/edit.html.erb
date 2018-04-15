@@ -1,0 +1,7 @@
+<h1>글 수정 페이지</h1>
+
+<form action="/post/update/<%= @post.id %>" method="get">
+  제목: <input type="text" name="input_title" value="<%= @post.title %>"></input><br><br>
+  내용: <textarea name='input_content'> <%= @post.content %></textarea><br>
+  <input type="submit" value="제출">
+</form>
